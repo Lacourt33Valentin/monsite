@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formations Pro - Achat en ligne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f4f6f8; color: #333; }
+        header { background-color: #1f4068; color: white; padding: 30px 0; text-align: center; }
+        header h1 { font-family: 'Montserrat', sans-serif; margin: 0; }
+        nav { display: flex; justify-content: center; background-color: #162447; font-family: 'Poppins', sans-serif; }
+        nav a { color: white; padding: 14px 20px; text-decoration: none; text-transform: uppercase; }
+        nav a:hover { background-color: #1f4068; }
+        section { padding: 50px; text-align: center; }
+        h2 { font-family: 'Montserrat', sans-serif; margin-bottom: 30px; }
+        .formations { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; }
+        .formation-card { background-color: white; border-radius: 10px; box-shadow: 0 6px 12px rgba(0,0,0,0.1); padding: 20px; width: 300px; transition: transform 0.3s, box-shadow 0.3s; text-align: left; }
+        .formation-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .formation-card h3 { font-family: 'Montserrat', sans-serif; margin-top: 0; }
+        .formation-card p { font-size: 14px; color: #555; }
+        .formation-card ul { padding-left: 20px; margin: 10px 0; }
+        .formation-card form button { margin-top: 15px; padding: 10px 20px; border: none; border-radius: 5px; background-color: #1f4068; color: white; cursor: pointer; font-family: 'Poppins', sans-serif; transition: background 0.3s; }
+        .formation-card form button:hover { background-color: #162447; }
+        .testimonials { background-color: #0d1b2a; color: white; padding: 50px 20px; }
+        .testimonial { max-width: 500px; margin: 20px auto; font-style: italic; }
+        footer { background-color: #162447; color: white; padding: 30px 20px; text-align: center; }
+        input, textarea { padding: 10px; width: 80%; max-width: 400px; border-radius: 5px; border: 1px solid #ccc; margin-bottom: 15px; }
+        button.newsletter-btn { padding: 10px 20px; background-color: #1f4068; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button.newsletter-btn:hover { background-color: #162447; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Formations Pro</h1>
+    <p>Boostez votre carrière avec nos formations en ligne</p>
+</header>
+
+<nav>
+    <a href="#formations">Formations</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="formations">
+    <h2>Nos Formations</h2>
+    <div class="formations">
+
+        <!-- HTML/CSS -->
+        <div class="formation-card">
+            <h3>HTML/CSS Complète</h3>
+            <p>Créez des sites web modernes, responsives et professionnels.</p>
+            <ul>
+                <li>10 modules du niveau débutant au avancé</li>
+                <li>Exercices pratiques pour chaque module</li>
+                <li>Modèles de sites personnalisables</li>
+                <li>Support en ligne pour toutes vos questions</li>
+                <li>Certificat de fin de formation</li>
+            </ul>
+            <p><strong>Prix : 49€</strong></p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="ton-email-paypal@example.com">
+                <input type="hidden" name="item_name" value="Formation HTML/CSS Complète">
+                <input type="hidden" name="amount" value="49.00">
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="hidden" name="return" value="contenu-html-css.html">
+                <button type="submit">Acheter</button>
+            </form>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="formation-card">
+            <h3>JavaScript</h3>
+            <p>Créez des sites interactifs et dynamiques.</p>
+            <p><strong>Prix : 69€</strong></p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="ton-email-paypal@example.com">
+                <input type="hidden" name="item_name" value="Formation JavaScript">
+                <input type="hidden" name="amount" value="69.00">
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="hidden" name="return" value="contenu-js.html">
+                <button type="submit">Acheter</button>
+            </form>
+        </div>
+
+        <!-- React -->
+        <div class="formation-card">
+            <h3>React</h3>
+            <p>Créez des applications web modernes avec React.</p>
+            <p><strong>Prix : 99€</strong></p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="ton-email-paypal@example.com">
+                <input type="hidden" name="item_name" value="Formation React">
+                <input type="hidden" name="amount" value="99.00">
+                <input type="hidden" name="currency_code" value="EUR">
+                <input type="hidden" name="return" value="contenu-react.html">
+                <button type="submit">Acheter</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section id="temoignages" class="testimonials">
+    <h2>Témoignages</h2>
+    <div class="testimonial">"Ces formations ont changé ma vie ! Merci pour votre pédagogie." – Alice</div>
+    <div class="testimonial">"J’ai trouvé un emploi grâce à ces cours." – Julien</div>
+    <div class="testimonial">"Contenu clair, exercices pratiques, je recommande !" – Sophie</div>
+</section>
+
+<section id="contact">
+    <h2>Contact / Newsletter</h2>
+    <p>Inscrivez-vous pour recevoir nos offres et nouveautés :</p>
+    <form onsubmit="newsletter(event)">
+        <input type="text" placeholder="Nom" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <button type="submit" class="newsletter-btn">S’inscrire</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Formations Pro – Tous droits réservés</p>
+</footer>
+
+<script>
+    function newsletter(event) {
+        event.preventDefault();
+        alert('Merci pour votre inscription ! Vous recevrez nos offres par email.');
+    }
+</script>
+
+</body>
+</html>
